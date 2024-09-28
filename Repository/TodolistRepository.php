@@ -16,10 +16,23 @@ namespace Repository {
 
         public array $todolist = array();
 
+        // membuat field untuk koneksi
+        private \PDO $connection;
+
+        // membuat jalur jika function membutuhkan koneksi
+        public function __construct(\PDO $connection)
+        {
+            $this->connection = $connection;
+        }
+
         function save(Todolist $todolist): void
         {
-            $number = sizeof($this->todolist) + 1;
-            $this->todolist[$number] = $todolist;
+            //$number = sizeof($this->todolist) + 1;
+            // $this->todolist[$number] = $todolist;
+
+            $sql = "INSERT INTO todolist(todo) VALUES (?)";
+            $statement = $this->connection->prepare($sql);
+            $statement->execute([$todolist->getTodo()]);
         }
 
         function remove(int $number): bool
