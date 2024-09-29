@@ -23,31 +23,31 @@ Project Studi Kasus PHP MySQL: Aplikasi Todolist
 ## Membuat-Koneksi-Database
 
 - Membuat koneksi ke database didalam folder Config
-- Lalu didalam folder Confif membuat php class menggunakan static method untuk nge-GET koneksinya
+- Lalu didalam folder Config membuat php class menggunakan static method untuk nge-GET koneksinya
 
 ## Menambah-Todolist
 
-- Membuat SQL CREATE
+- Membuat QUERY SQL CREATE
 - kelebihan menggunakan desain clean-architecture pada Aplikasi-Todolist-V2, disaat ingin implementasi untuk menyimpan data ke dalam database tidak ada perubahan yg signifikan, perubahan hanya fokus di bagian Repository (mengelola data)
 - Mengubah implementasi function testAddTodolist()
 
-## Tes-Menambah-Todolist
+## Testing-Menambah-Todolist
 
 - Melakukan testing pada Service QUERY SQL CREATE
 
 ## Menghapus-Todolist
 
-- Membuat SQL DELETE
+- Membuat QUERY SQL DELETE
 - Function remove() menggunakan return value boolean menyebabkan problem, dikarenakan return value harus bernilai TRUE or FALSE
 - Dibuatkan pengecekan id ke database ada/tidak
 
-## Tes-Menghapus-Todolist
+## Testing-Menghapus-Todolist
 
 - Melakukan testing pada Service QUERY SQL DELETE
 
 ## Menampilkan-Todolist
 
-- Membuat SQL SHOW
+- Membuat QUERY SQL SHOW
 - Membuat objek todolist di return value array (array_of_todolist)
 - Mengubah dari awalnya menggunakan number index ke number id (AUTO_INCREMENT) database
 
