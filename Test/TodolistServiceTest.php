@@ -9,17 +9,20 @@ use Entity\Todolist;
 use Repository\TodolistRepositoryImpl;
 use Service\TodolistServiceImpl;
 
-//function testShowTodolist(): void
-//{
-    //$todolistRepository = new TodolistRepositoryImpl();
-    //$todolistRepository->todolist[1] = new Todolist("Belajar PHP Dasar");
-    //$todolistRepository->todolist[2] = new Todolist("Belajar PHP OOP");
-    //$todolistRepository->todolist[3] = new Todolist("Belajar PHP Database");
-    //$todolistService = new TodolistServiceImpl($todolistRepository);
+function testShowTodolist(): void
+{
+    // membuat parameter koneksi
+    $connection = \Config\Database::getConnection();
+    $todolistRepository = new TodolistRepositoryImpl($connection);
 
-    //$todolistService->showTodolist();
+    $todolistService = new TodolistServiceImpl($todolistRepository);
+    // $todolistService->addTodolist("Belajar PHP Dasar");
+    // $todolistService->addTodolist("Belajar PHP OOP");
+    // $todolistService->addTodolist("Belajar PHP Database");
 
-//}
+    $todolistService->showTodolist();
+
+}
 
 function testAddTodolist(): void 
 {
@@ -28,9 +31,9 @@ function testAddTodolist(): void
     $todolistRepository = new TodolistRepositoryImpl($connection);
 
     $todolistService = new TodolistServiceImpl($todolistRepository);
-    $todolistService->addTodolist("Belajar PHP Dasar");
-    $todolistService->addTodolist("Belajar PHP OOP");
-    $todolistService->addTodolist("Belajar PHP Database");
+    // $todolistService->addTodolist("Belajar PHP Dasar");
+    // $todolistService->addTodolist("Belajar PHP OOP");
+    // $todolistService->addTodolist("Belajar PHP Database");
 
    // $todolistService->showTodolist();
 }
@@ -42,11 +45,14 @@ function testRemoveTodolist(): void
 
     $todolistService = new TodolistServiceImpl($todolistRepository);
 
-    echo $todolistService->removeTodolist(6);
-    echo $todolistService->removeTodolist(5);
-    echo $todolistService->removeTodolist(4);
+    // echo $todolistService->removeTodolist(1);
+    // echo $todolistService->removeTodolist(2);
+    // echo $todolistService->removeTodolist(3);
+    // echo $todolistService->removeTodolist(7);
+    // echo $todolistService->removeTodolist(8);
+    // echo $todolistService->removeTodolist(9);
 }
 
-testRemoveTodolist();
+testShowTodolist();
 
 ?>

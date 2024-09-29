@@ -26,8 +26,9 @@ namespace Service {
         function showTodolist(): void
         {
             echo "TODOLIST" . PHP_EOL;
-            foreach ($this->todolistRepository->findAll() as $number => $value) {
-                echo "$number." . $value->getTodo() . PHP_EOL;
+            $todolist = $this->todolistRepository->findAll();
+            foreach ($todolist as $number => $value) {
+                echo $value->getId() . ". " . $value->getTodo() . PHP_EOL;
             }
         }
 
