@@ -6,15 +6,15 @@ Project Studi Kasus PHP MySQL: Aplikasi Todolist
 
 ## Daftar Isi
 
--[Membuat-Table](#membuat-table)
--[Membuat-Koneksi-Database](#membuat-koneksi-database)
--[Menambah-Todolist](#menambah-todolist)
--[Testing-Menambah-Todolist](#testing-menambah-todolist)
--[Menghapus-Todolist](#menghapus-todolist)
--[Testing-Menghapus-Todolist](testing-menghapus-todolist)
--[Menampilkan-Todolist](#menampilkan-todolist)
--[Testing-Menampilkan-Todolist](#testing-menampilkan-todolist)
--[Testing-Seluruh-Aplikasi](#testing-seluruh-aplikasi)
+- [Membuat-Table](#membuat-table)
+- [Membuat-Koneksi-Database](#membuat-koneksi-database)
+- [Menambah-Todolist](#menambah-todolist)
+- [Testing-Menambah-Todolist](#testing-menambah-todolist)
+- [Menghapus-Todolist](#menghapus-todolist)
+- [Testing-Menghapus-Todolist](testing-menghapus-todolist)
+- [Menampilkan-Todolist](#menampilkan-todolist)
+- [Testing-Menampilkan-Todolist](#testing-menampilkan-todolist)
+- [Testing-Seluruh-Aplikasi](#testing-seluruh-aplikasi)
 
 ## Membuat-Table
 
