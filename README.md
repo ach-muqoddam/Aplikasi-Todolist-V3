@@ -11,7 +11,7 @@ Project Studi Kasus PHP MySQL: Aplikasi Todolist
 - [Menambah-Todolist](#menambah-todolist)
 - [Testing-Menambah-Todolist](#testing-menambah-todolist)
 - [Menghapus-Todolist](#menghapus-todolist)
-- [Testing-Menghapus-Todolist](testing-menghapus-todolist)
+- [Testing-Menghapus-Todolist](#testing-menghapus-todolist)
 - [Menampilkan-Todolist](#menampilkan-todolist)
 - [Testing-Menampilkan-Todolist](#testing-menampilkan-todolist)
 - [Testing-Seluruh-Aplikasi](#testing-seluruh-aplikasi)
